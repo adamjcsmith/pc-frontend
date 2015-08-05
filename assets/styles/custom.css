@@ -1,0 +1,16 @@
+.white { color: white; }
+
+* { font-family: 'Lato', sans-serif; }
+
+#map { height: 100%; width: 100%; }
+
+@media screen and (min-width: 641px) {
+
+  .my-fixed { position: fixed; z-index: 2000; right: 0; }
+
+  .title-area { float: none !important; display: inline-block; }
+
+  .top-bar-section { display: inline; }
+
+  .top-bar { border-radius: 0 0 0 20px; }
+}
