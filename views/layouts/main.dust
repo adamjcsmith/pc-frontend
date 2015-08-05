@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>New Sails App</title>
+    <title>{+title /}</title>
 
     <!-- Viewport mobile tag for sensible mobile support -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -34,6 +34,7 @@
     <link rel="stylesheet" href="/styles/foundation.css">
     <link rel="stylesheet" href="/styles/custom.css">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <!--STYLES END-->
 
     <!-- Additional Scripts -->
@@ -59,12 +60,17 @@
         <!-- Right Nav Section -->
         <ul class="right">
           <li class="has-dropdown active">
-            <a href="#">City Centre Plan #123456789000</a>
+            <a href="#">Common Garden St Plan</a>
             <ul class="dropdown">
               <li><a href="#">Overlay Application</a></li>
               <li class="active"><a href="#">Something Here</a></li>
             </ul>
           </li>
+
+          <li>
+            <a href="#"><i class="fa fa-search"><i></a>
+          </li>
+
         </ul>
 
       </section>

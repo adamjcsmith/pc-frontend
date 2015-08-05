@@ -1,12 +1,14 @@
 
 {>"layouts/main"/}
 
+{<title}PC Demo{/title}
+
 {<body}
 
   <div id="map"></div>
 
   <script>
-    var map = L.map('map').setView([54.044902, -2.799261], 13);
+    var map = L.map('map').setView([54.044902, -2.799261], 17);
 
     L.tileLayer('http://{~lb}s{~rb}.tile.osm.org/{~lb}z{~rb}/{~lb}x{~rb}/{~lb}y{~rb}.png', {
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
@@ -15,6 +17,50 @@
 L.marker([54.044902,-2.799261]).addTo(map)
     .bindPopup('Lancaster City Centre')
     .openPopup();
+
+var geojsonFeature = {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -2.798316478729248,
+              54.04573320166011
+            ],
+            [
+              -2.797715663909912,
+              54.045717453353575
+            ],
+            [
+              -2.797688841819763,
+              54.04524500138247
+            ],
+            [
+              -2.797844409942627,
+              54.04514106122804
+            ],
+            [
+              -2.7986598014831543,
+              54.045355240656136
+            ],
+            [
+              -2.798316478729248,
+              54.04573320166011
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+};
+
+L.geoJson(geojsonFeature).addTo(map);
+
   </script>
 
 {/body}
