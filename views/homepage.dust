@@ -21,6 +21,8 @@ L.marker([54.044902,-2.799261]).addTo(map)
     .bindPopup('Lancaster City Centre')
     .openPopup();
 
+*/
+
 var geojsonFeature = {
   "type": "FeatureCollection",
   "features": [
@@ -64,7 +66,7 @@ var geojsonFeature = {
 
 L.geoJson(geojsonFeature).addTo(map);
 
-*/
+
 
   </script>
 
