@@ -41,6 +41,7 @@
     <script src="js/vendor/modernizr.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
     <script src="http://cdn.jsdelivr.net/leaflet.esri/1.0.0/esri-leaflet.js"></script>
+    <script src="/js/vendor/jquery.js"></script>
 
     <!-- End of Additional Scripts -->
 
@@ -51,8 +52,8 @@
   <div class="my-fixed">
     <nav class="top-bar" data-topbar role="navigation">
       <ul class="title-area">
-        <li class="name">
-          <h1><a href="#">PlaceChangers</a></h1>
+        <li class="name show-for-small-only">
+          <h1><a href="#">Lancaster City Centre</a></h1>
         </li>
          <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
         <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
@@ -61,22 +62,39 @@
       <section class="top-bar-section">
         <!-- Right Nav Section -->
         <ul class="right">
-
-          <li>
-            <a href="#"><i class="fa fa-cog"></i></a>
-          </li>
-
-          <li class="has-dropdown active">
-            <a href="#">Common Garden St Plan</a>
+		
+			<li class="has-dropdown">
+				<a href="#" onclick="relocate(myMap, {latitude: 54.16748408, longitude: -2.8267908});"><i class="fa fa-map-marker fa-fw"></i>&nbsp; Silverdale, LA1</a>
+				
+				<ul class="dropdown">
+					<li class="active"><a href="#" onclick="relocate(myMap, {latitude: 54.16748408, longitude: -2.8267908}); $(this).switchMenuOption();"><i class="fa fa-map-marker fa-fw"></i>&nbsp; Silverdale, LA1</a></li>
+					<li><a href="#" onclick="relocate(myMap, {latitude: 53.30126072, longitude: -2.3729488}); $(this).switchMenuOption();"><i class="fa fa-map-marker fa-fw"></i>&nbsp; Knutsford, WA16</a></li>
+				</ul>
+				
+			</li>
+        
+		<li class="has-dropdown active"> 
+		  
+            <a href="#"><i class="fa fa-filter fa-fw"></i>&nbsp; Residents</a>
             <ul class="dropdown">
-              <li><a href="#">Overlay Application</a></li>
-              <li class="active"><a href="#">Something Here</a></li>
+				
+				<li><a href="#">No Filter</a></li>		
+				<li class="active"><a href="#"><i class="fa fa-filter fa-fw"></i>&nbsp; Residents</a></li>
+				<li><a href="#"><i class="fa fa-filter fa-fw"></i>&nbsp; Developers</a></li>
+				<li><a href="#"><i class="fa fa-filter fa-fw"></i>&nbsp; Planners</a></li>
             </ul>
           </li>
-
+		  
+		  
+		<li>
+			<a href="#"><i class="fa fa-search"></i></a>
+		</li>
+		  
+		  
           <li>
-            <a href="#"><i class="fa fa-search"><i></a>
-          </li>
+            <a href="#"><i class="fa fa-cog"></i></a>
+          </li>		  
+
 
         </ul>
 
@@ -139,9 +157,9 @@
 
     <!--SCRIPTS-->
     <script src="/js/dependencies/sails.io.js"></script>
-    <script src="/js/vendor/jquery.js"></script>
     <script src="/js/foundation.min.js"></script>
     <script src="/js/vendor/fastclick.js"></script>
+	<script src="/js/jquery.placechangers.js"></script>
     <!--SCRIPTS END-->
 
     <!-- Activate Foundation -->

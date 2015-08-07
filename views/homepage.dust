@@ -5,12 +5,23 @@
 
 {<body}
 
-  <div id="map"></div>
+  <div id="map">
+  
+	<img src="/images/place-changers-logo.png" id="map-icon" width="114" height="75">
+  </div>
 
   <script>
-    var map = L.map('map').setView([54.044902, -2.799261], 17);
+  
+  var myMap;
+  
+  $(document).ready( function() {
+	console.log("Ready");
+    myMap = $('#map').addPCMap({latitude: 54.044902, longitude: -2.799261});
+});
+  
+    //var map = L.map('map').setView([54.044902, -2.799261], 17);
 
-    L.esri.basemapLayer('Topographic').addTo(map);
+    //L.esri.basemapLayer('Topographic').addTo(map);
 
 /*
     L.tileLayer('http://{~lb}s{~rb}.tile.osm.org/{~lb}z{~rb}/{~lb}x{~rb}/{~lb}y{~rb}.png', {
@@ -22,6 +33,8 @@ L.marker([54.044902,-2.799261]).addTo(map)
     .openPopup();
 
 */
+
+/*
 
 var geojsonFeature = {
   "type": "FeatureCollection",
@@ -66,7 +79,7 @@ var geojsonFeature = {
 
 L.geoJson(geojsonFeature).addTo(map);
 
-
+*/
 
   </script>
 
