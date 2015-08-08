@@ -3,8 +3,22 @@
 (function($) {
     $.fn.addPCMap = function(latLong) {
 		var id = $(this).attr('id');
-		var map = L.map(id).setView([latLong.latitude, latLong.longitude], 17);
+		var map = L.map(id, {drawControl: true}).setView([latLong.latitude, latLong.longitude], 17);
 		L.esri.basemapLayer('Streets').addTo(map);
+		
+		// Add draw options:
+		/*
+		var drawnItems = new L.FeatureGroup();
+		map.addLayer(drawnItems);
+		var drawControl = new L.Control.Draw({
+			edit: {
+				featureGroup: drawnItems
+			}
+			
+		});
+		map.addControl(drawControl);
+		*/
+		
 		return map;
     }
 	
@@ -22,6 +36,9 @@
 		
 		// Highlight new location: 
 		$(this).parent().addClass('active');
+		
+		// Change title:
+		document.title = $(this).text() + " : Place Changers";
 		
 	}
 
