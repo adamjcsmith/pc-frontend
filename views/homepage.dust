@@ -1,13 +1,13 @@
 
 {>"layouts/main"/}
 
-{<title}PC Demo{/title}
+{<title}Silverdale, LA1 : Place Changers{/title}
 
 {<body}
 
   <div id="map">
   
-	<img src="/images/place-changers-logo.png" id="map-icon" width="114" height="75">
+	<img src="/images/place-changers-logo.png" id="map-icon">
   </div>
 
   <script>
@@ -16,7 +16,7 @@
   
   $(document).ready( function() {
 	console.log("Ready");
-    myMap = $('#map').addPCMap({latitude: 54.044902, longitude: -2.799261});
+    myMap = $('#map').addPCMap({latitude: 54.16748408, longitude: -2.8267908});
 });
   
     //var map = L.map('map').setView([54.044902, -2.799261], 17);

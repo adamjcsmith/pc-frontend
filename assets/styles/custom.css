@@ -3,9 +3,11 @@
 * { font-family: 'Lato', sans-serif; }
 
 #map { height: 100%; width: 100%; }
+/*
 #map-icon { position: absolute; bottom: 10px; left: 10px; z-index: 2000;  }
+*/
 
-.curved-edge { border-radius: 0 0 0 10px; }
+#map-icon { position: absolute; top: 10px; right: 15px; z-index: 2000; width: 70px; }
 
 @media screen and (min-width: 641px) {
 
@@ -15,5 +17,5 @@
 
   .top-bar-section { display: inline; }
 
-  .top-bar { border-radius: 0 0 0 20px; }
+  .top-bar { border-radius: 7px; border-left: solid 5px #333333; border-right: solid 5px #333333; top: 10px; right: 100px; } 
 }
