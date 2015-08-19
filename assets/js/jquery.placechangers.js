@@ -3,7 +3,7 @@
 (function($) {
     $.fn.addPCMap = function(latLong) {
 		var id = $(this).attr('id');
-		var map = L.map(id, {drawControl: true}).setView([latLong.latitude, latLong.longitude], 17);
+		var map = L.map(id, {drawControl: true}).setView([latLong.latitude, latLong.longitude], 14);
 		L.esri.basemapLayer('Streets').addTo(map);
 		
 		// Add draw options:
@@ -45,6 +45,6 @@
 }(jQuery));
 
 function relocate(myMap, latLong) {
-	myMap.setView([latLong.latitude, latLong.longitude], 17);
+	myMap.setView([latLong.latitude, latLong.longitude], 14);
 	return myMap;
 }

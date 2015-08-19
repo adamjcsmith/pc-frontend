@@ -1,14 +1,10 @@
-.white { color: white; }
-
 * { font-family: 'Lato', sans-serif; }
 
 #map { height: 100%; width: 100%; }
 
-#map-icon { position: absolute; top: 10px; right: 16px; z-index: 2000; width: 70px; }
+#map-icon { position: absolute; top: 10px; right: 22px; z-index: 2000; width: 60px; }
 
-/* Experimental Position */
-
-#map-icon { top: 10px; right: 22px; width: 60px; }
+.white { color: white; }
 
 @media screen and (min-width: 641px) {
 
@@ -18,31 +14,15 @@
 
   .top-bar-section { display: inline; }
 
-  .top-bar { border-radius: 7px; border-left: solid 5px #333333; border-right: solid 5px #333333; top: 12px; right: 100px; } 
+  .top-bar { height: 2.2rem; background: transparent; border-radius: 7px; border-left: solid 5px #333333; border-right: solid 5px #333333; top: 12px; right: 100px; } 
   
+  .top-bar-section li:not(.has-form) a:not(.button), .top-bar-section li.active:not(.has-form) a:not(.button) { line-height: 2.2rem; }
   
-  /* Experimental UI Features */
-  .top-bar-section li:not(.has-form) a:not(.button), .top-bar-section li.active:not(.has-form) a:not(.button) {
-	line-height: 2.2rem;
-  }
+  .top-bar-section .has-dropdown > a:after { top: 1.1rem; }
   
-  .top-bar-section .has-dropdown > a:after {
-	top: 1.1rem;
-  }
+  .top-bar-section ul li { border-left: solid 2px transparent; }
   
-  .top-bar {
-	height: 2.2rem; background: transparent;
-  }
+  .top-bar-section ul li { background: transparent; }
   
-  .top-bar-section ul li {
-	border-left: solid 2px transparent;
-  }
-  
-  .top-bar-section ul li {
-	background: transparent;
-  }
-  
-  .top-bar-section ul li:first-of-type {
-	border-left: 0;
-  }
+  .top-bar-section ul li:first-of-type { border-left: 0; }
 }
