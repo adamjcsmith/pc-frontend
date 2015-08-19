@@ -89,9 +89,18 @@
         <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
       </ul>
 
+
+	  
       <section class="top-bar-section">
+	  
+
+	  
         <!-- Right Nav Section -->
         <ul class="right">
+		
+		  <li>
+			<a href="#"><i class="fa fa-comment fa-fw"></i>&nbsp; A note or action will be here.</a>
+		  </li>			
 		
 			<li class="has-dropdown">
 				<a href="#"><i class="fa fa-map-marker fa-fw"></i>&nbsp; Silverdale, LA1</a>
