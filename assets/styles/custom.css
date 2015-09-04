@@ -1,28 +1,28 @@
 * { font-family: 'Lato', sans-serif; }
 
-#map { height: 100%; width: 100%; }
+#map-container { padding: 14px; top: 43px; left: 0; right: 0; bottom: 0; position: absolute; }
+
+#map { height: 100%; width: 100%; z-index: 0; }
 
 #map-icon { position: absolute; top: 10px; right: 22px; z-index: 2000; width: 60px; }
 
 .white { color: white; }
+.dim  { color: rgba(0,0,0,0.7); }
+.teal { color: #008CBA !important; }
+
+.top-bar * { transition: all 0.2s ease; }
+.top-bar { border-bottom: solid 1px #ccc; }
+.top-bar .name h1, .top-bar .name span { line-height: 2.85rem !important; font-size: 1rem; }
+.top-bar-section li:not(.has-form) a:not(.button), .top-bar-section ul li, .top-bar , .top-bar-section .has-form { background: transparent; }
+.top-bar-section ul li > a, .top-bar .name h1 a { color: black; font-size: 0.9rem; font-family: 'Lato', sans-serif; }
+.top-bar-section .has-form { border-left: solid 1px rgba(0,0,0,0.1); border-right: solid 1px rgba(0,0,0,0.1); }
+.top-bar-section ul li > a.button { padding-top: 0.4rem; }
+
+/* Active button */
+.top-bar-section li.active:not(.has-form) a:not(.button) { background: transparent; border-bottom: solid 2px #008CBA; color: #008CBA; }
+.top-bar-section li:not(.has-form) a:not(.button):hover { background: #008CBA; color: white; border-bottom: solid 2px #008CBA;  }
 
 @media screen and (min-width: 641px) {
 
-  .my-fixed { position: fixed; z-index: 2000; right: 0; }
 
-  .title-area { float: none !important; display: inline-block; }
-
-  .top-bar-section { display: inline; }
-
-  .top-bar { height: 2.2rem; background: transparent; border-radius: 7px; border-left: solid 5px #333333; border-right: solid 5px #333333; top: 12px; right: 100px; } 
-  
-  .top-bar-section li:not(.has-form) a:not(.button), .top-bar-section li.active:not(.has-form) a:not(.button) { line-height: 2.2rem; }
-  
-  .top-bar-section .has-dropdown > a:after { top: 1.1rem; }
-  
-  .top-bar-section ul li { border-left: solid 2px transparent; }
-  
-  .top-bar-section ul li { background: transparent; }
-  
-  .top-bar-section ul li:first-of-type { border-left: 0; }
 }

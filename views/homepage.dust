@@ -5,10 +5,12 @@
 
 {<body}
 
-  <div id="map">
-  
-	<img src="/images/place-changers-logo.png" id="map-icon">
-  </div>
+	<div id="map-container">
+		<div id="map">
+			<img src="/images/place-changers-logo.png" style="display: none;" id="map-icon">
+		</div>
+	</div>
+
 
   <script>
   
@@ -16,7 +18,7 @@
   
   $(document).ready( function() {
 	console.log("Ready");
-    myMap = $('#map').addPCMap({latitude: 54.16748408, longitude: -2.8267908});
+    myMap = $('#map').addPCMap({latitude: 53.9, longitude: -2.7});
 });
   
     //var map = L.map('map').setView([54.044902, -2.799261], 17);

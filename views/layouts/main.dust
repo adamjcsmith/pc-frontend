@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="/styles/importer.css">
     <link rel="stylesheet" href="/styles/normalize.css">
     <link rel="stylesheet" href="/styles/foundation.css">
+	<!-- <link rel="stylesheet" href="/styles/gum.css"> -->
     <link rel="stylesheet" href="/styles/custom.css">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -79,67 +80,35 @@
 
   <body>
 
-  <div class="my-fixed">
-    <nav class="top-bar" data-topbar role="navigation">
-      <ul class="title-area">
-        <li class="name show-for-small-only">
-          <h1><a href="#">Lancaster City Centre</a></h1>
-        </li>
-         <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-      </ul>
-
-
-	  
-      <section class="top-bar-section">
-	  
-
-	  
-        <!-- Right Nav Section -->
-        <ul class="right">
-		
-		  <li>
-			<a href="#"><i class="fa fa-comment fa-fw"></i>&nbsp; A note or action will be here.</a>
-		  </li>			
-		
-			<li class="has-dropdown">
-				<a href="#"><i class="fa fa-map-marker fa-fw"></i>&nbsp; Silverdale, LA1</a>
-				
-				<ul class="dropdown">
-					<li class="active"><a href="#" onclick="relocate(myMap, {latitude: 54.16748408, longitude: -2.8267908}); $(this).switchMenuOption();"><i class="fa fa-map-marker fa-fw"></i>&nbsp; Silverdale, LA1</a></li>
-					<li><a href="#" onclick="relocate(myMap, {latitude: 53.30126072, longitude: -2.3729488}); $(this).switchMenuOption();"><i class="fa fa-map-marker fa-fw"></i>&nbsp; Knutsford, WA16</a></li>
-				</ul>
-				
-			</li>
-        
-		<li class="has-dropdown active"> 
-		  
-            <a href="#"><i class="fa fa-filter fa-fw"></i>&nbsp; Filters</a>
-            <ul class="dropdown">
-				
-				<li><a href="#">No Filter</a></li>		
-				<li class="active"><a href="#"><i class="fa fa-filter fa-fw"></i>&nbsp; Residents</a></li>
-				<li><a href="#"><i class="fa fa-filter fa-fw"></i>&nbsp; Developers</a></li>
-				<li><a href="#"><i class="fa fa-filter fa-fw"></i>&nbsp; Planners</a></li>
-            </ul>
-          </li>
-		  
-		  
-		<li>
-			<a href="#"><i class="fa fa-search"></i></a>
+	<nav class="top-bar" data-topbar role="navigation">
+	  <ul class="title-area">
+		<li class="name">
+		  <h1><a href="#"><span class="teal">Carnforth</span> | <span class="dim">PlaceChangers</span></a></h1>
 		</li>
-		  
-		  
-          <li>
-            <a href="#"><i class="fa fa-cog"></i></a>
-          </li>		  
+		 <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+		 
+		<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+	  </ul>
 
+	  <section class="top-bar-section">
+		<!-- Right Nav Section -->
+		<ul class="right">
+		  <li class="active"><a href="#"><i class="fa fa-map-marker"></i>&nbsp; Map</a></li>
+			<li><a href="#"><i class="fa fa-line-chart"></i>&nbsp; Analytics</a></li>
+			<li><a href="#" class="dim">Log Out</a></li>
+		</ul>
 
-        </ul>
-
-      </section>
-    </nav>
-  </div>
+		<!-- Left Nav Section -->
+		<ul class="left">
+		
+			<li class="has-form">
+  <a href="http://foundation.zurb.com/docs" class="button">+ Add New</a>
+</li>
+		
+		  <li><a href="#"><i class="fa fa-search"></i>&nbsp; Search</a></li>
+		</ul>
+	  </section>
+	</nav>
 
     {+body /}
 

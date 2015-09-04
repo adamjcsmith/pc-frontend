@@ -3,9 +3,18 @@
 (function($) {
     $.fn.addPCMap = function(latLong) {
 		var id = $(this).attr('id');
-		var map = L.map(id, {drawControl: true}).setView([latLong.latitude, latLong.longitude], 14);
-		L.esri.basemapLayer('Streets').addTo(map);
+		var map = L.map(id, {drawControl: true, attributionControl: false}).setView([latLong.latitude, latLong.longitude], 11);
+		//L.esri.basemapLayer('Streets').addTo(map);
 		
+		
+		L.tileLayer('http://178.62.91.105:8001/{z}/{x}/{y}', {
+		}).addTo(map);
+		
+
+		var myControl = L.control.attribution({prefix: '<a href="http://www.placechangers.co.uk">PlaceChangers</a>'});
+		myControl.addAttribution("Contains OS data &copy; Crown Copyright 2015");
+		map.addControl(myControl);		
+
 		// Add draw options:
 		/*
 		var drawnItems = new L.FeatureGroup();
