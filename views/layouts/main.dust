@@ -83,17 +83,18 @@
 	<nav class="top-bar" data-topbar role="navigation">
 	  <ul class="title-area">
 		<li class="name">
-		  <h1><a href="#"><span class="teal">Carnforth</span> | <span class="dim">PlaceChangers</span></a></h1>
+		  <h1><a href="#"><span class="teal">Carnforth</span>&nbsp; > &nbsp; Planning Application (13/01297/OUT)</a></h1>
 		</li>
 		 <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-		 
 		<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
 	  </ul>
 
 	  <section class="top-bar-section">
 		<!-- Right Nav Section -->
 		<ul class="right">
-		  <li class="active"><a href="#"><i class="fa fa-map-marker"></i>&nbsp; Map</a></li>
+			<li><a href="/hybrid"><i class="fa fa-list"></i>&nbsp; Details</a></li>
+			<li class="active"><a href="/"><i class="fa fa-map-marker"></i>&nbsp; Map</a></li>
+			<li><a href="/"><i class="fa fa-comments-o"></i>&nbsp; Discussion</a></li>
 			<li><a href="#"><i class="fa fa-line-chart"></i>&nbsp; Analytics</a></li>
 			<li><a href="#" class="dim">Log Out</a></li>
 		</ul>
@@ -102,10 +103,14 @@
 		<ul class="left">
 		
 			<li class="has-form">
-  <a href="http://foundation.zurb.com/docs" class="button">+ Add New</a>
-</li>
+			  <a href="http://foundation.zurb.com/docs" class="button">+ Add New</a>
+			</li>
+			
+			<li class="has-form">
+				 <a href="http://foundation.zurb.com/docs" class="button otherbutton"><i class="fa fa-pencil"></i></a>
+			</li>
 		
-		  <li><a href="#"><i class="fa fa-search"></i>&nbsp; Search</a></li>
+		  <li><a id="search-box" href="#" onClick="showSearchBox();"><i class="fa fa-search"></i>&nbsp; Search</a></li>
 		</ul>
 	  </section>
 	</nav>

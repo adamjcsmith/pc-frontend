@@ -1,0 +1,40 @@
+
+{>"layouts/main"/}
+
+{<title}Silverdale, LA1 : Place Changers{/title}
+
+{<body}
+
+	<div class="row">
+		<div class="small-3 large-3 columns padding">
+			<p>The council would like to develop a small brownfield plot off Scotland Road in partnership with Seddon Ltd into eighteen family houses.</p>
+			<hr>
+			<p><i class="fa fa-map-marker maroon"></i>&nbsp; &nbsp; Location: &nbsp; Scotland Road, Carnforth</p>
+			<p><i class="fa fa-building-o darkgreen"></i>&nbsp; &nbsp; PlaceChanger: &nbsp; Hunter Consultants</p>
+			<hr>
+			<p><i class="fa fa-clock-o steelblue"></i>&nbsp; &nbsp; Timeline: &nbsp; 2016 Proposal</p>
+			<p><i class="fa fa-check green"></i>&nbsp; &nbsp; Status: &nbsp; Permitted</p>
+			<hr>
+			
+		</div>
+		<div class="small-9 large-9 columns" style="height: 800px; padding-top: 10px;">
+			<div id="map">
+				<img src="/images/place-changers-logo.png" style="display: none;" id="map-icon">
+			</div>
+		</div>
+	</div>
+
+
+
+  <script>
+  
+	var myMap;
+  
+	$(document).ready( function() {
+		console.log("Ready");
+		myMap = $('#map').addPCMap({latitude: 53.932565, longitude: -2.762901});
+	});
+
+  </script>
+
+{/body}

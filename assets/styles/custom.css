@@ -9,6 +9,12 @@
 .white { color: white; }
 .dim  { color: rgba(0,0,0,0.7); }
 .teal { color: #008CBA !important; }
+.maroon { color: maroon; }
+.darkgreen { color: darkgreen; }
+.steelblue { color: steelblue; }
+.green { color: green; }
+
+.otherbutton { background: orange; }
 
 .top-bar * { transition: all 0.2s ease; }
 .top-bar { border-bottom: solid 1px #ccc; }
@@ -21,6 +27,9 @@
 /* Active button */
 .top-bar-section li.active:not(.has-form) a:not(.button) { background: transparent; border-bottom: solid 2px #008CBA; color: #008CBA; }
 .top-bar-section li:not(.has-form) a:not(.button):hover { background: #008CBA; color: white; border-bottom: solid 2px #008CBA;  }
+
+.row { max-width: 100%; }
+.padding { padding: 2%; }
 
 @media screen and (min-width: 641px) {
 
