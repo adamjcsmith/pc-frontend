@@ -7,7 +7,7 @@
 		//L.esri.basemapLayer('Streets').addTo(map);
 		
 		
-		L.tileLayer('http://178.62.91.105:8001/{z}/{x}/{y}', {
+		L.tileLayer('http://46.101.84.220:8001/{z}/{x}/{y}', {
 		}).addTo(map);
 		
 
